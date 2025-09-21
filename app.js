@@ -93,12 +93,18 @@ function C5() {
     let anac = Number(document.getElementById('anac').value);
     let edad = anac - anna;
 
-    if(edad > 100){
-        document.getElementById('cal5').innerText = "Edad: " + edad + " años, ¿Eres un elfo, fantasma o irreal?";
+    if (edad <= 0){
+        if(edad > 100){
+            document.getElementById('cal5').innerText = "Edad: " + edad + " años, ¿Eres un elfo, fantasma o irreal?";
+        }
+        else{
+            document.getElementById('cal5').innerText = "Edad: " + edad + " años";
+        }
     }
-    else{
-        document.getElementById('cal5').innerText = "Edad: " + edad + " años";
+    else {
+        document.getElementById('cal5').innerText = "Datos invalidos";
     }
+
 }
 
 // Ejercicio 6
