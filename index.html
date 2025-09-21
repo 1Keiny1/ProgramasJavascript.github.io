@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Programas JavaScript</title>
+</head>
+
+<body>
+    
+    <h1>Programas JavaScript</h1>
+
+    <!-- Ejercicio 1 -->
+    <div>
+        <h2>1. Inversion</h2>
+        
+        <label>Capital a invertir: <input type="number" class="capital" id="capital"></label>
+        <button onclick="C1()">Calcular</button>
+        <p id="calI" class="final"></p>
+    </div>
+
+    <!-- Ejercicio 2 -->
+    <div>
+        <h2>2. Comisiones</h2>
+
+        <label>Sueldo base: <input type="number" id="sueldob" class="sueldob"></label>
+        <label>Primera venta: <input type="number" id="pv" class="pv"></label>
+        <label>Segunda venta: <input type="number" id="sv" class="sv"></label>
+        <label>Tercera venta: <input type="number" id="tv" class="tv"></label>
+        <button onclick="C2()">Calcular</button>
+        <p id="cal2" class="final"></p>
+    </div>
+
+    <!-- Ejercicio 3 -->
+    <div>
+        <h2>3. Descuento</h2>
+
+        <label>Total de la compra: <input type="number" id="compra" class="compra"></label>
+        <button onclick="C3()">Calcular</button>
+        <p id="cal3" class="final"></p>
+    </div>
+
+    <!-- Ejercicio 4 -->
+    <div>
+        <h2>4. Calificaciones</h2>
+
+        <label>Calificación parcial 1: <input type="number" id="cali1" class="cali1"></label>
+        <label>Calificación parcial 2: <input type="number" id="cali2" class="cali2"></label>
+        <label>Calificación parcial 3: <input type="number" id="cali3" class="cali3"></label>
+        <label>Calificación del examen final: <input type="number" id="calie" class="calie"></label>
+        <label>Calificación del trabajo final: <input type="number" id="calitf" class="calitf"></label>
+        <button onclick="C4()">Calcular</button>
+        <p id="cal4" class="final"></p>
+    </div>
+
+    <!-- Ejercicio 5 -->
+    <div>
+        <h2>5. Edad</h2>
+
+        <label>Año de nacimiento: <input type="number" name="anna" id="anna"></label>
+        <label>Año actual: <input type="number" id="anac"></label>
+        <button onclick="C5()">Calcular</button>
+        <p id="cal5" class="final"></p>
+    </div>
+
+    <!-- Ejercicio 6 -->
+    <div>
+        <h2>6. Palabras a números</h2>
+
+        <label>Escribe palabras separadas por una coma (ejemplo: cero,uno,tres):<input type="text" id="numeros" class="numeros"></label>
+        <button onclick="C6()">Convertir</button>
+        <p id="cal6" class="final"></p>
+    </div>
+
+    <!-- Ejercicio 7 -->
+    <div>
+        <h2>7. Horas extras</h2>
+
+        <label>Horas trabajadas: <input type="number" class="horas" id="horas"></label>
+        <label>Pago por hora: <input type="number" class="pagoxh" id="pagoxh"></label>
+        <button onclick="C7()">Calcular</button>
+        <p id="cal7" class="final"></p>
+    </div>
+
+    <!-- Ejercicio 8 -->
+    <div>
+        <h2>8. Utilidades</h2>
+
+        <label>Salario mensual: <input type="number" id="salario"></label>
+        <label>
+            <span>Tiempo de antigüedad: </span>
+            <select id="tiempoan" name="tiempoan">
+              <option value="menos1">Menos de 1 año</option>
+              <option value="1a2">1 año o más y menos de 2 años	</option>
+              <option value="2a5">2 años o más y menos de 5 años </option>
+              <option value="5a10">5 años o más y menos de 10 años</option>
+              <option value="10mas">10 años o más</option>
+            </select>
+        </label>
+        <button onclick="C8()">Calcular</button>
+        <p id="cal8" class="final"></p>
+    </div>
+
+    <!-- Ejercicio 9 -->
+    <div>
+        <h2>9. Formulario de validación</h2>
+
+        <form id="registro" novalidate>
+            <label for="nombre">Nombre "OBLIGATORIO":</label>
+            <input id="nombre" type="text" />
+            <div id="errornombre" class="error"></div>
+      
+            <label for="email">Email "OBLIGATORIO":</label>
+            <input id="email" type="email" />
+            <div id="erroremail" class="error"></div>
+      
+            <label for="password">Contraseña "Mín. 6 caracteres"</label>
+            <label for="password">"Necesita al menos minúscula, mayúscula y dígito":</label>
+            <input id="contraseña" type="password" />
+            <div id="errorcontraseña" class="error"></div>
+      
+            <label for="comentarios">Comentarios "OBLIGATORIO, máximo 50 caracteres":</label>
+            <textarea id="comentarios" rows="3"></textarea>
+            <div id="errorcomentarios" class="error"></div>
+      
+            <label>
+              <input id="acepto" type="checkbox" />
+              Acepto las condiciones del servicio (obligatorio)
+            </label>
+            <div id="erroracepto" class="error"></div>
+      
+            <button type="submit">Enviar</button>
+          </form>
+          <p id="cal9" class="final"></p>
+        </div>
+
+    <!-- Ejercicio 10 -->
+
+    <div>
+        <h2>10. Eliminar los scripts</h2>
+
+        <label>Coloca aqui tu HTML con scripts</label>
+        <textarea id="codigo" rows="4"></textarea>
+        <br><br>
+        <button id="eliminars">Eliminar</button>
+        <p>Texto sin &lt;scripts&gt; :</p>
+        <pre id="cal10" class="final"></pre>
+    </div>
+
+    <script src="app.js"></script>
+
+    <footer>
+        López Ruiz Jesús Enrique 5IV9
+    </footer>
+</body>
+
+</html>
